@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matemática Básica</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <header>
+                        <h1>Contas Matemáticas Básicas</h1>
+                        <p>As operações matemáticas básicas são adição, subtração, multiplicação e divisão e representam as relações de números diferentes entre si.</p>
+                </div>
+                    </header>
+                    
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="contas">
+                        <h2>Multiplicação</h2>
+                        <p>A multiplicação é uma das operações matemáticas básicas. Ela é uma evolução natural da adição, pois é definida de modo que represente a soma de determinado número de conjuntos que possuem a mesma quantidade de elementos. </p>
+                        <input type="number" name="fator1" id="fator1" class='input'> x
+                        <input type="number" name="fator2" id="fator2" class='input'>
+                        <input type="button" value="Calcular" id='calcular' onclick="tabuada()">
+                        <input type="button" value="Limpar" id='limpar' onclick="limparmult()">
+                        <div id='restabuada'></div>                        
+                        <script src="assets/js/tabuada.js"></script>
+                    </div>
+                 </div>
+                    
+              
+                <div class="col">
+                    <div class="contas">
+                        <h2>Divisão</h2>
+                        <p>A divisão de números naturais é o mesmo que repartir em partes iguais os números. Na divisão, o dividendo é o número a ser dividido, e o divisor é o número que divide o cálculo e quociente é o resultado da operação. De tal modo que numa divisão temos: 15:3 = 5, uma vez que 3 x 5 = 15.</p>
+                        <input type="number" name="fator1" id="div1" class='input'> /
+                        <input type="number" name="fator2" id="div2" class='input'>
+                        <input type="button" value="Calcular" id='calcular' onclick="divisao()">
+                        <input type="button" value="Limpar" id='limpar' onclick="limpardiv()">
+                        <div id='resdivisao'></div>
+                        <script src="assets/js/divisao.js"></script>
+                    </div>
+                </div>
+              
+                <div class="w-100"></div>
+              
+                <div class="col">
+                    <div class="contas">
+                        <h2>Subtração</h2>
+                        <p>Subtração é uma das quatro operações matemáticas básicas na qual, para cada dois valores, um é subtraído do outro, ou seja, uma quantidade é retirada de outra, e o valor restante é o resultado dessa operação. Em uma subtração a – b = c, a é chamado minuendo, b é chamado subtraendo e c é chamado resto ou diferença. O número c é o resultado da subtração.</p>
+                        <input type="number" name="fator1" id="sub1" class='input'> -
+                        <input type="number" name="fator2" id="sub2" class='input'>
+                        <input type="button" value="Calcular" id='calcular' onclick="subtracao()">
+                        <input type="button" value="Limpar" id='limpar' onclick="limparsub()">                        
+                        <div id='ressubtracao'>
+                        <script src="assets/js/subtracao.js"></script></div>
+                    </div>
+                </div>
+              
+                <div class="col">
+                    <div class="contas">
+                        <h2>Adição</h2>
+                        <p>A adição é uma das quatros operações fundamentais da aritmética. Consiste em adicionar dois ou mais números naturais, conhecido como parcelas, que produz em todos os casos um único resultado que chamamos de soma ou total. A adição é conhecida popularmente como soma. O ato de somar alguma coisa ocorre frequentemente no nosso cotidiano</p>
+                        <input type="number" name="fator1" id="ad1" class='input'> +
+                        <input type="number" name="fator2" id="ad2" class='input'>
+                        <input type="button" value="Calcular" id='calcular' onclick="adicao()">
+                        <input type="button" value="Limpar" id='limpar' onclick="limparad()">
+                        <div id='resadicao'>
+                        <script src="assets/js/adicao.js"></script></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+</body>
+</html>
